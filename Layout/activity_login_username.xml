@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginOtpActivity"
+    android:background="@color/white"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/usernameimg"
+        android:id="@+id/usernameImg"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your username"
+        android:layout_below="@+id/usernameImg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="24sp"
+        android:textColor="#696969"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:id="@+id/usernameTxt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="\tUsername"
+        android:inputType="text"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:layout_below="@+id/usernameTxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/userName"
+        />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/akhdar"
+        android:layout_below="@+id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/createAccountBtn"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/akhdar"
+        android:layout_below="@id/createAccountBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/loginUsernameProgressBar"
+        />
+</RelativeLayout>
